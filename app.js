@@ -108,10 +108,11 @@ app.listen(3000, function(){
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+require('dotenv').config();
 const PORT = process.env.PORT||3000; //allows to run the app remotely as well as locally
 // const request = require("request");
 const https = require('https');
-const API_KEY = "17910b2b40dd3cca0b56540f1cf3668b-us21";
+const API_KEY = process.env.api_key;
 const audianceID = "72c300d1f9"; 
  
  
